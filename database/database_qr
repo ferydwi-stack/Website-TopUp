@@ -1,0 +1,95 @@
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Server version:               8.4.3 - MySQL Community Server - GPL
+-- Server OS:                    Win64
+-- HeidiSQL Version:             12.8.0.6908
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+-- Dumping data for table qr.cache: ~0 rows (approximately)
+DELETE FROM `cache`;
+
+-- Dumping data for table qr.cache_locks: ~0 rows (approximately)
+DELETE FROM `cache_locks`;
+
+-- Dumping data for table qr.diamonds: ~18 rows (approximately)
+DELETE FROM `diamonds`;
+INSERT INTO `diamonds` (`id`, `game_id`, `name`, `amount`, `price`, `image`, `is_popular`, `is_active`, `created_at`, `updated_at`) VALUES
+	(1, 1, '86 💎', 86, 20000.00, '/img/ml.jpg', 0, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(2, 1, '172 💎', 172, 40000.00, '/img/ml.jpg', 0, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(3, 1, '257 💎', 257, 60000.00, '/img/ml.jpg', 1, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(4, 1, '344 💎', 344, 80000.00, '/img/ml.jpg', 0, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(5, 1, '429 💎', 429, 100000.00, '/img/ml.jpg', 0, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(6, 2, '100 💎', 100, 15000.00, '/img/ff.jpg', 0, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(7, 2, '200 💎', 200, 30000.00, '/img/ff.jpg', 0, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(8, 2, '500 💎', 500, 75000.00, '/img/ff.jpg', 1, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(9, 2, '1000 💎', 1000, 150000.00, '/img/ff.jpg', 0, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(10, 3, '60 UC', 60, 12000.00, '/img/pubg.jpg', 0, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(11, 3, '325 UC', 325, 65000.00, '/img/pubg.jpg', 1, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(12, 3, '660 UC', 660, 132000.00, '/img/pubg.jpg', 0, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(13, 4, '60 Primogems', 60, 15000.00, '/img/gi.jpg', 0, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(14, 4, '300 Primogems', 300, 75000.00, '/img/gi.jpg', 1, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(15, 4, '980 Primogems', 980, 245000.00, '/img/gi.jpg', 0, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(16, 5, '100 CP', 100, 20000.00, '/img/cod.jpg', 0, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(17, 5, '500 CP', 500, 100000.00, '/img/cod.jpg', 1, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(18, 5, '1000 CP', 1000, 200000.00, '/img/cod.jpg', 0, 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42');
+
+-- Dumping data for table qr.failed_jobs: ~0 rows (approximately)
+DELETE FROM `failed_jobs`;
+
+-- Dumping data for table qr.games: ~5 rows (approximately)
+DELETE FROM `games`;
+INSERT INTO `games` (`id`, `name`, `slug`, `description`, `image`, `is_active`, `created_at`, `updated_at`) VALUES
+	(1, 'Mobile Legends: Bang Bang', 'mobile-legends', 'Mobile MOBA game with 5v5 battles', '/img/ml.jpg', 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(2, 'Free Fire', 'free-fire', 'Battle Royale survival shooter game', '/img/ff.jpg', 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(3, 'PUBG Mobile', 'pubg-mobile', 'Battle Royale game with realistic graphics', '/img/pubg.jpg', 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(4, 'Genshin Impact', 'genshin-impact', 'Open-world action RPG adventure', '/img/gi.jpg', 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42'),
+	(5, 'Call of Duty: Mobile', 'cod-mobile', 'First-person shooter mobile game', '/img/cod.jpg', 1, '2025-08-23 09:10:42', '2025-08-23 09:10:42');
+
+-- Dumping data for table qr.jobs: ~0 rows (approximately)
+DELETE FROM `jobs`;
+
+-- Dumping data for table qr.job_batches: ~0 rows (approximately)
+DELETE FROM `job_batches`;
+
+-- Dumping data for table qr.migrations: ~6 rows (approximately)
+DELETE FROM `migrations`;
+INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
+	(1, '0001_01_01_000000_create_users_table', 1),
+	(2, '0001_01_01_000001_create_cache_table', 1),
+	(3, '0001_01_01_000002_create_jobs_table', 1),
+	(4, '2025_08_23_152548_create_games_table', 1),
+	(5, '2025_08_23_152554_create_diamonds_table', 1),
+	(6, '2025_08_23_153605_create_top_up_transactions_table', 1);
+
+-- Dumping data for table qr.password_reset_tokens: ~0 rows (approximately)
+DELETE FROM `password_reset_tokens`;
+
+-- Dumping data for table qr.sessions: ~1 rows (approximately)
+DELETE FROM `sessions`;
+INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
+	('BeK0w8RYxCg3XZFC2oAicpFwFNpHXEAYXlCGOOWO', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiNkl2MjlCNnA4dVQyckxFcHZQd3JJMG1malphSjlIQnRVYjhETnVIcCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1756028822);
+
+-- Dumping data for table qr.top_up_transactions: ~3 rows (approximately)
+DELETE FROM `top_up_transactions`;
+INSERT INTO `top_up_transactions` (`id`, `user_id`, `diamond_id`, `game_id`, `amount`, `status`, `payment_code`, `payment_method`, `created_at`, `updated_at`) VALUES
+	(1, 1, 1, '12113131331', 20000.00, 'pending', '5RKR9PBBO3', 'mbanking', '2025-08-23 23:34:41', '2025-08-23 23:34:41'),
+	(2, 1, 1, '12113131331', 20000.00, 'pending', 'KIKCMGREFJ', 'ewallet', '2025-08-24 00:10:02', '2025-08-24 00:10:02'),
+	(3, 1, 1, '12113131331', 20000.00, 'pending', '2Y3MEDRZSL', 'ewallet', '2025-08-24 00:38:41', '2025-08-24 00:38:41');
+
+-- Dumping data for table qr.users: ~0 rows (approximately)
+DELETE FROM `users`;
+
+/*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
