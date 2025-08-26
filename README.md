@@ -276,12 +276,5 @@ npm run dev -- --watch
 
 This project is licensed under the MIT License.
 
-## 📞 Support
-
-- **Email**: support@goc.com
-- **WhatsApp**: +62 812-3456-7890
-- **Documentation**: [docs.goc.com](https://docs.goc.com)
-
----
 
 **GOC TopUp** - Platform top up diamond game terpercaya dan terlengkap di Indonesia! 🎮✨
